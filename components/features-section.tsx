@@ -52,7 +52,7 @@ export default function FeaturesSection() {
            title="Calçados de Fabricação Própria"
            description="Todos os produtos são 100% fabricados em nossa empresa. Trazendo controle padrão de qualidade Premium."
            index={3}
-/>
+
           />
 
           <FeatureCard
