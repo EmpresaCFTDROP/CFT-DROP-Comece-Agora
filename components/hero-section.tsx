@@ -176,10 +176,9 @@ export default function HeroSection() {
             sem estoque e sem investimento inicial
           </h1>
 
-          <p className="text-lg md:text-xl text-light-dim mb-10 max-w-2xl mx-auto">
-            Tenha seu próprio negócio de dropshipping com calçados brasileiros premium. Sem taxa, sem complicação.
-            Comece hoje mesmo a empreender.
-          </p>
+        <p className="text-lg md:text-xl text-light-dim mb-10 max-w-2xl mx-auto">
+  Precisando de fornecedor de DROPSHIPPING e ATACADO sem dor de cabeça e mi-mi-mi?. Bem vind@ a CFTDROP, faça vendas ONLINE sem se preocupar com estoque.
+</p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button
