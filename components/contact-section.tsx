@@ -57,7 +57,7 @@ function CompanyInfo() {
           />
           <InfoItem icon={<Phone size={18} />} text="(16) 99148-6936" />
           <InfoItem icon={<Mail size={18} />} text="cftdrop@gmail.com" />
-          <InfoItem icon={<Clock size={18} />} text="Segunda a Sexta: 9h às 18h" />
+          <InfoItem icon={<Clock size={18} />} text="Segunda a Sexta: 9h às 17h" />
         </ul>
       </div>
 
