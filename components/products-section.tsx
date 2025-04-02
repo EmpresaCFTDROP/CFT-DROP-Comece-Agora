@@ -55,14 +55,14 @@ export default function ProductsSection() {
   />
 </div>
         <div className="text-center">
-          <Button
-            asChild
-            className="bg-gradient-to-r from-primary to-primary-dark hover:shadow-glow-lg transition-all duration-300 text-white font-bold py-3 px-8 rounded-md mb-4"
-          >
-            <Link href="#contact">Ver Catálogo Completo</Link>
-          </Button>
-          <p className="text-light-dim text-sm italic">*Preços para revendedores cadastrados na plataforma.</p>
-        </div>
+  <Button
+    asChild
+    className="bg-gradient-to-r from-primary to-primary-dark hover:shadow-glow-lg transition-all duration-300 text-white font-bold py-3 px-8 rounded-md mb-4"
+  >
+    <Link href="https://cftdropshipping.com.br/" target="_blank">Ver Catálogo Completo</Link>
+  </Button>
+  <p className="text-light-dim text-sm italic">*Preços para revendedores cadastrados na plataforma.</p>
+</div>
       </div>
     </section>
   )
