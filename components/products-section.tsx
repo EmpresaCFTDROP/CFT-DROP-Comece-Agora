@@ -21,30 +21,39 @@ export default function ProductsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Imagem: public/images/products/tenis-esportivo.jpg */}
-          <ProductCard
-            image="/images/products/tenis-esportivo.jpg"
-            title="Tênis Esportivo Premium"
-            price="149,90"
-            index={0}
-          />
-
-          {/* Imagem: public/images/products/tenis-casual.jpg */}
-          <ProductCard
-            image="/images/products/tenis-casual.jpg"
-            title="Tênis Casual Masculino"
-            price="129,90"
-            index={1}
-          />
-
-          {/* Imagem: public/images/products/sapato.jpg */}
-          <ProductCard image="/images/products/sapato.jpg" title="Sapatênis Moderno" price="139,90" index={2} />
-
-          {/* Imagem: public/images/products/sandalia.jpg */}
-          <ProductCard image="/images/products/sandalia.jpg" title="Sandália Feminina" price="99,90" index={3} />
-        </div>
-
+       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+  {/* Imagem: public/images/products/tenis-esportivo.jpg */}
+  <ProductCard 
+    image="/images/products/tenis-esportivo.jpg" 
+    title="Tênis Esportivo Premium" 
+    price="53,00"
+    index={0}
+  />
+  
+  {/* Imagem: public/images/products/tenis-casual.jpg */}
+  <ProductCard 
+    image="/images/products/tenis-casual.jpg" 
+    title="Tênis Casual Masculino" 
+    price="65,00"
+    index={1}
+  />
+  
+  {/* Imagem: public/images/products/sapato.jpg */}
+  <ProductCard 
+    image="/images/products/sapato.jpg" 
+    title="Sapato Social Couro" 
+    price="80,00"
+    index={2}
+  />
+  
+  {/* Imagem: public/images/products/sandalia.jpg */}
+  <ProductCard 
+    image="/images/products/sandalia.jpg" 
+    title="Sandália Feminina" 
+    price="50,00"
+    index={3}
+  />
+</div>
         <div className="text-center">
           <Button
             asChild
