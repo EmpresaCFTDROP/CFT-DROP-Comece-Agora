@@ -7,22 +7,21 @@ export default function Footer() {
     <footer className="bg-dark py-16 border-t border-white/5">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-center mb-10">
-          <Link href="#" className="flex items-center gap-2 text-2xl font-extrabold text-light mb-6">
-            <Zap size={28} className="text-primary" />
-            CFT <span className="text-primary">DROP</span>
-          </Link>
+  <Link href="#" className="flex items-center gap-2 text-2xl font-extrabold text-light mb-6">
+    <Zap size={28} className="text-primary" />
+    CFT <span className="text-primary">DROP</span>
+  </Link>
 
-          <p className="text-light-dimmer max-w-md text-center mb-6">
-            A melhor plataforma de dropshipping de calçados do Brasil. Venda sem estoque e sem investimento inicial.
-          </p>
+  <p className="text-light-dimmer max-w-md text-center mb-6">
+    A melhor plataforma de dropshipping de calçados do Brasil. Venda sem estoque e sem investimento inicial.
+  </p>
 
-          <div className="flex gap-4">
-            <SocialLink href="#" icon={<Instagram size={18} />} />
-            <SocialLink href="#" icon={<Facebook size={18} />} />
-            <SocialLink href="#" icon={<MessageSquare size={18} />} />
-            <SocialLink href="#" icon={<Youtube size={18} />} />
-          </div>
-        </div>
+  <div className="flex gap-4">
+    <SocialLink href="https://www.instagram.com/cftdrop.com.br/" icon={<Instagram size={18} />} />
+    <SocialLink href="https://wa.me/5516991486936" icon={<MessageSquare size={18} />} />
+    <SocialLink href="https://www.youtube.com/@CFTDROPSHIPPING-2023" icon={<Youtube size={18} />} />
+  </div>
+</div>
 
         <div className="text-center border-t border-white/5 pt-6">
           <p className="text-light-dimmer text-sm">
