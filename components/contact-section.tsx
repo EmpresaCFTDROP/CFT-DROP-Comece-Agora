@@ -127,7 +127,7 @@ function ContactForm() {
               <span>Ligue para Nós</span>
             </Link>
 
-            <p className="text-light-dimmer text-sm mt-4">Atendimento de segunda a sexta, das 9h às 18h</p>
+            <p className="text-light-dimmer text-sm mt-4">Atendimento de segunda a sexta, das 9h às 17h</p>
           </div>
         </div>
       </div>
