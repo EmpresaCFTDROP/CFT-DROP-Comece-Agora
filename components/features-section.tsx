@@ -43,15 +43,16 @@ export default function FeaturesSection() {
           <FeatureCard
             icon={<Truck size={24} />}
             title="Entrega Rápida"
-            description="Enviamos para todo o Brasil em 3 a 7 dias úteis, garantindo a satisfação dos seus clientes com um tempo de entrega competitivo."
+            description="Envios no mesmo dia ou no máximo 24hrs"
             index={2}
           />
 
           <FeatureCard
-            icon={<Footprints size={24} />}
-            title="Calçados Premium"
-            description="Trabalhamos apenas com calçados de alta qualidade, garantindo conforto, durabilidade e satisfação para seus clientes."
-            index={3}
+           icon={<Footprints size={24} />}
+           title="Calçados de Fabricação Própria"
+           description="Todos os produtos são 100% fabricados em nossa empresa. Trazendo controle padrão de qualidade Premium."
+           index={3}
+/>
           />
 
           <FeatureCard
