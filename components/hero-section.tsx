@@ -181,20 +181,28 @@ export default function HeroSection() {
 </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button
-              asChild
-              className="bg-gradient-to-r from-primary to-primary-dark hover:shadow-glow-lg transition-all duration-300 text-white font-bold py-3 px-8 rounded-md"
-            >
-              <Link href="#features">Conheça as Vantagens</Link>
-            </Button>
-            <Button
-              asChild
-              variant="outline"
-              className="border-light-dim text-light hover:bg-light/10 transition-all duration-300 font-bold py-3 px-8 rounded-md"
-            >
-              <Link href="#contact">Fale Conosco</Link>
-            </Button>
-          </div>
+  <Button
+    asChild
+    className="bg-gradient-to-r from-primary to-primary-dark hover:shadow-glow-lg transition-all duration-300 text-white font-bold py-3 px-8 rounded-md"
+  >
+    <Link href="#features">Conheça as Vantagens</Link>
+  </Button>
+  <Button
+    asChild
+    variant="outline"
+    className="border-light-dim text-light hover:bg-light/10 transition-all duration-300 font-bold py-3 px-8 rounded-md"
+  >
+    <Link href="#contact">Fale Conosco</Link>
+  </Button>
+  <Button
+    asChild
+    className="bg-primary hover:bg-primary-dark transition-all duration-300 text-white font-bold py-3 px-8 rounded-md"
+  >
+    <Link href="https://cftdropshipping.com.br/login" target="_blank">
+      <LogIn className="mr-2 h-4 w-4" /> Fazer Login
+    </Link>
+  </Button>
+</div>
 
           <div className="flex flex-col md:flex-row gap-8 md:gap-16 justify-center pt-8 border-t border-white/10">
             <div className="text-center">
