@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X } from "lucide-react"
+import { Menu, X, LogIn } from 'lucide-react' // Adicione LogIn aqui
+import { Button } from "@/components/ui/button" // Importe o Button
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -26,8 +27,13 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="#" className="flex items-center gap-2 text-xl font-extrabold text-light">
-          {/* Imagem: public/images/logo.png */}
-          <Image src="/images/logo.png" alt="CFT Logo" width={80} height={40} className="h-10 w-auto" />
+          <Image
+            src="/images/logo.png"
+            alt="CFT Logo"
+            width={80}
+            height={40}
+            className="h-10 w-auto"
+          />
           CFT DROP
         </Link>
 
@@ -36,7 +42,7 @@ export default function Header() {
           ${
             isMobileMenuOpen
               ? "fixed inset-0 bg-dark/95 flex flex-col items-center justify-center z-50"
-              : "hidden md:block"
+              : "hidden md:flex md:items-center md:gap-4" // Modificado para incluir flex e items-center
           }
         `}
         >
@@ -92,13 +98,30 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+          
+          {/* Botão de Login - Visível apenas na versão desktop quando o menu não está aberto */}
+          {!isMobileMenuOpen && (
+            <Button asChild className="ml-4 bg-primary hover:bg-primary-dark text-white">
+              <Link href="https://cftdropshipping.com.br/login" target="_blank">
+                <LogIn className="mr-2 h-4 w-4" /> Fazer Login
+              </Link>
+            </Button>
+          )}
         </nav>
 
-        <button className="md:hidden text-light" onClick={() => setIsMobileMenuOpen(true)}>
-          <Menu size={24} />
-        </button>
+        {/* Botão de Login - Visível na versão mobile */}
+        <div className="flex items-center gap-2">
+          <Button asChild className="hidden sm:flex md:hidden bg-primary hover:bg-primary-dark text-white">
+            <Link href="https://cftdropshipping.com.br/login" target="_blank">
+              <LogIn className="mr-2 h-4 w-4" /> Login
+            </Link>
+          </Button>
+          
+          <button className="md:hidden text-light" onClick={() => setIsMobileMenuOpen(true)}>
+            <Menu size={24} />
+          </button>
+        </div>
       </div>
     </header>
   )
 }
-
