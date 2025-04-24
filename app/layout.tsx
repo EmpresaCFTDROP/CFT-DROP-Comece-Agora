@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import TidioChatbot from "@/components/tidio-chatbot"
+import HelpButton from "@/components/help-button"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -35,6 +36,10 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         {/* Você pode remover o componente TidioChatbot se estiver usando o método acima */}
+        <body className={inter.className}>
+  {children}
+  <HelpButton />
+</body>
       </body>
     </html>
   )
