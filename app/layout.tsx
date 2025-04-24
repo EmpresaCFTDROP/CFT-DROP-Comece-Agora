@@ -30,11 +30,13 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="icon" href="/images/favicon.ico" />
+        {/* Adicione o script do Tidio diretamente aqui */}
+        <script src="//code.tidio.co/hcb4iqisxpo8etghga2olwe79byjyss1.js" async></script>
       </head>
-     <body className={inter.className}>
-  {children}
-  <TidioChatbot />
-</body>
+      <body className={inter.className}>
+        {children}
+        {/* Você pode remover o componente TidioChatbot se estiver usando o método acima */}
+      </body>
     </html>
   )
 }
