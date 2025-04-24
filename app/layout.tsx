@@ -30,8 +30,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <link rel="icon" href="/images/favicon.ico" />
-        {/* Adicione o script do Tidio diretamente aqui */}
-        <script src="//code.tidio.co/hcb4iqisxpo8etghga2olwe79byjyss1.js" async></script>
+      <script src="//code.tidio.co/hcb4iqisxpo8etghga2olwe79byjyss1.js" async></script>
       </head>
       <body className={inter.className}>
         {children}
