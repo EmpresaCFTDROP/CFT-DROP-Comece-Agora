@@ -31,12 +31,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/favicon.ico" />
       </head>
-      <body className={inter.className}>{children}
-      <body className={inter.className}>
+     <body className={inter.className}>
   {children}
   <TidioChatbot />
 </body>
-      </body>
     </html>
   )
 }
